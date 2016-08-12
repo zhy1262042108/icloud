@@ -1,0 +1,512 @@
+@import "basechence";
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  //position: relative;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background: url(../images/packed-4.png);
+}
+.lists{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 500px;
+  background: #383838;
+  .list-title{
+    height: 44px;
+    border-bottom: 1px solid #1a1a1a;
+    position: relative;
+    .logo{
+      background: url(../images/packed-5.png) no-repeat 0px -588px;
+      position: absolute;
+      width: 56px;
+      height: 16px;
+      top: 14px;
+      left: 12px;
+    }
+    .title{
+      position: absolute;
+      top: 0;
+      line-height: 44px;
+      left: 74px;
+      color: #999;
+      font-size: 21px;
+    }
+    .add{
+      background: url(../images/packed-5.png)no-repeat -23px -526px;
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+    }
+  }
+  .list-active{
+    background:rgb(45,45,43);
+    overflow: hidden;
+    .planed{
+      background: rgb(45,45,43);
+    }
+  }
+  .plan{
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 54px;
+    position: relative;
+    font-size: 16px;
+    .plan-icon{
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 2px;
+      width: 40px;
+      height: 40px;
+      background: url(../images/packed-5.png) 0 -359px no-repeat;
+    }
+    input{
+      display: inline;
+      border: none;
+      width: auto;
+      color: white;
+      outline: none;
+      font-size: 17px;
+      background: #383836;
+    }
+    .green{
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -85px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px;
+    }
+    .yellow{
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -34px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px;
+    }
+    .blue{
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -68px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px;
+    }
+    .orange{
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -51px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px;
+    }
+    .purple{
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -17px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px;
+    }
+    .brow{
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -133px -549px;
+      position: absolute;
+      top: 15px;
+      left: 22px;
+    }
+    .pink{
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -102px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px;
+    }
+    .line{
+      position: absolute;
+      width: 90%;
+      height: 2px;
+      bottom: -2px;
+      right: 0;
+      background: url(../images/packed-1.png);
+    }
+
+  }
+}
+.detail{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 500px;
+  .detail-list{
+    position: relative;
+    .option-detail{
+      width: 355px;
+      height: 226px;
+      position: absolute;
+      right: 55px;
+      top: -45px;
+      z-index: 10;
+      background: white;
+      .container{
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 20px 0 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        input{
+          width: 314px;
+          height: 42px;
+          font-size: 25px;
+          outline: none;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          padding-left: 13px;
+        }
+        .color-list{
+          color: black;
+          line-height: 55px;
+          padding-left: 3px;
+        }
+        ul{
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 14px;
+          .list-active.green{
+            background: url(../images/stylesheet-1.png) 0px -33px;
+          }
+          .list-active.yellow{
+            background: url(../images/stylesheet-1.png) 0px -99px;
+          }
+          .list-active.blue{
+            background: url(../images/stylesheet-1.png) 0px -66px;
+          }
+          .list-active.orange{
+            background: url(../images/stylesheet-1.png) 0px -198px;
+          }
+          .list-active.purple{
+            background: url(../images/stylesheet-1.png) 0px 0px;
+          }
+          .list-active.brow{
+            background: url(../images/stylesheet-1.png) 0px -132px;
+          }
+          .list-active.pink{
+            background: url(../images/stylesheet-1.png) 0px -165px;
+          }
+          li{
+            width: 33px;
+            height: 33px;
+            margin-left: 10px;
+            float: left;
+            cursor: pointer;
+            span{
+              display: block;
+              width: 25px;
+              height: 25px;
+              margin: 4px 0px 0 4px;
+            }
+            .green.circle{
+              background: url(../images/stylesheet-1.png) 0px  -256px;
+            }
+            .yellow.circle{
+              background: url(../images/stylesheet-1.png) 0px -306px;
+            }
+            .blue.circle{
+              background: url(../images/stylesheet-1.png) 0px -281px;
+            }
+            .orange.circle{
+              background: url(../images/stylesheet-1.png) 0px -381px;
+            }
+            .purple.circle{
+              background: url(../images/stylesheet-1.png) 0px -231px;
+            }
+            .brow.circle{
+              background: url(../images/stylesheet-1.png) 0px -331px;
+            }
+            .pink.circle{
+              background: url(../images/stylesheet-1.png) 0px -356px;
+            }
+          }
+          &::after{
+            content: '';
+            display: block;
+            clear: both;
+          }
+        }
+        .del{
+          position: absolute;
+          font-size: 18px;
+          color: red;
+          bottom: 20px;
+          left: 20px;
+          cursor: pointer;
+        }
+        .cancle{
+          position: absolute;
+          font-size: 18px;
+          bottom: 20px;
+          left: 65%;
+          padding-right: 20px;
+          border-right: 1px solid #ccc;
+          cursor: pointer;
+        }
+        .finish{
+          cursor: pointer;
+          position: absolute;
+          font-size: 18px;
+          font-weight: bold;
+          bottom: 20px;
+          right: 10px;
+        }
+      }
+    }
+  }
+
+  .detail-title{
+    font-size: 40px;
+    line-height: 1.2;
+    cursor: default;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    height: 48px;
+    padding-left: 28px;
+    .option{
+      position: absolute;
+      right: 20px;
+      top: 19px;
+      font-size: 19px;
+      cursor: pointer;
+    }
+  }
+  .detail-content{
+    padding: 6px 0 0 0;
+    position: relative;
+    .line{
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: 98%;
+      height: 2px;
+      background: url(../images/packed-3.png);
+    }
+    .bottom{
+      position: absolute;
+      right: 0px;
+      bottom: -2px;
+      width: 98%;
+      height: 2px;
+      background: url(../images/packed-3.png);
+    }
+    .h{
+      width: 100%;
+      height: 2px;
+      background: #000;
+      margin-top: 10px;
+    }
+    .done{
+      padding-left: 50px;
+      height: 52px;
+      line-height: 52px;
+      color: #333;
+      font-size: 20px;
+      .state{
+        display: block;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        background: url(../images/packed-5.png) -92px -526px;
+        cursor: pointer;
+      }
+      .state.active{
+        background: url(../images/packed-5.png) -69px -526px;
+      }
+    }
+    .add{
+      cursor: pointer;
+    }
+    .item{
+      position: relative;
+      height: 52px;
+      line-height: 52px;
+      color: #333;
+      font-size: 19px;
+      padding-left: 58px;
+      box-sizing: border-box;
+      .delete{
+        width: 40px;
+        position: absolute;
+        top: 0;
+        right:10px;
+        line-height: 52px;
+        cursor: pointer;
+      }
+      .control{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 10px;
+        left: 21px;
+        line-height: 52px;
+      }
+      input{
+        margin-left: 23px;
+        height: 44px;
+        outline: none;
+        display: inline;
+        border: none;
+        background: none;
+        font-size: 18px;
+      }
+    }
+
+  }
+}
+.green{
+  color: #49bf1f;
+  input{
+    color: #49bf1f;
+  }
+  .unchecked{
+    background: url(../images/packed-5.png) no-repeat -42px -360px;
+  }
+  .checked{
+    background: url(../images/packed-5.png) no-repeat -32px -402px;
+  }
+  .item-active{
+    background: rgba(73,191,31,0.1);
+    border: 1px solid rgba(73,191,31,1);
+    border-left: none;
+    border-right: none;
+  }
+}
+.yellow{
+  color: #e0ac00;
+  input{
+    color: #e0ac00;
+  }
+  .unchecked{
+    background: url(../images/packed-5.png) no-repeat -136px -268px;
+  }
+  .checked{
+    background: url(../images/packed-5.png) no-repeat -136px -200px;
+  }
+  .item-active{
+    background: rgba(224,172,0,0.1);
+    border: 1px solid rgba(224,172,0,1);
+    border-left: none;
+    border-right: none;
+  }
+}
+.blue{
+  color: #1badf8;
+  input{
+    color: #1badf8;
+  }
+  .unchecked{
+    background: url(../images/packed-5.png) no-repeat -136px -168px;
+  }
+  .checked{
+    background: url(../images/packed-5.png) no-repeat -74px -360px;
+  }
+  .item-active{
+    background: rgba(27,173,248,0.1);
+    border: 1px solid rgba(27,173,248,1);
+    border-left: none;
+    border-right: none;
+  }
+}
+.orange{
+  color: orange;
+  input{
+    color: orange;
+  }
+  .unchecked{
+    background: url(../images/packed-5.png) no-repeat -0px -434px;
+  }
+  .checked{
+    background: url(../images/packed-5.png) no-repeat -96px -466px;
+  }
+  .item-active{
+    background: rgba(255,127,0,0.1);
+    border: 1px solid rgba(255,127,0,1);
+    border-left: none;
+    border-right: none;
+  }
+}
+.purple{
+  color: #b14bc9;
+  input{
+    color: #b14bc9;
+  }
+  .unchecked{
+    background: url(../images/packed-5.png) no-repeat -64px -466px;
+  }
+  .checked{
+    background: url(../images/packed-5.png) no-repeat 0px -465px;
+  }
+  .item-active{
+    background: rgba(177,75,201,0.1);
+    border: 1px solid rgba(177,75,201,1);
+    border-left: none;
+    border-right: none;
+  }
+}
+.brow {
+  color: #a2845e;
+  input{
+    color: #a2845e;
+  }
+  .unchecked{
+    background: url(../images/packed-5.png) no-repeat -96px -434px;
+  }
+  .checked{
+    background: url(../images/packed-5.png) no-repeat -32px -434px;
+  }
+  .item-active{
+    background: rgba(162,132,94,0.1);
+    border: 1px solid rgba(162,132,94,1);
+    border-left: none;
+    border-right: none;
+  }
+}
+.pink{
+  color: #ff2968;
+  input{
+    color: #ff2968;
+  }
+  .unchecked{
+    background: url(../images/packed-5.png) no-repeat -128px -402px;
+  }
+  .checked{
+    background: url(../images/packed-5.png) no-repeat -64px -402px;
+  }
+  .item-active{
+    background: rgba(255,41,104,0.1);
+    border: 1px solid rgba(255,41,104,1);
+    border-left: none;
+    border-right: none;
+  }
+}

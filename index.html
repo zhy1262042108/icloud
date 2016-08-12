@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" ng-app="reminder">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-controller="listCtrl" ng-click="showcard=false">
+    <div class="lists">
+        <div class="list-title">
+            <div class="logo"></div>
+            <div class="title">提醒事项</div>
+            <div class="add" ng-click="addItem($event)"></div>
+        </div>
+        <ul>
+            <li class="plan">
+                <span class="plan-icon"></span>
+                <div class="planed">已计划</div>
+            </li>
+            <li class="plan" ng-repeat="li in lists track by $index" ng-class="{'list-active':(li==currentlist)}" ng-click="setCurrent(li)">
+                <span ng-class="li.color"></span>
+                <input type="text" value="li.name" class="planed" ng-model="li.name"ng-change="saveData()">
+                <div class="line"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="detail">
+        <div class="detail-list {{currentlist.color}}">
+            <div class="detail-title">
+                <span ng-bind="currentlist.name"></span>
+                <div class="option" ng-click="showcard=!showcard;cancel($event)">选项</div>
+            </div>
+            <div class="option-detail" ng-init="showcard=false" ng-show="showcard">
+                <div class="container">
+                    <input type="text"  ng-model="currentlist.name" >
+                    <p class="color-list">列表颜色</p>
+                    <ul>
+                        <li ng-class="{'list-active':(v===currentlist.color),}"ng-repeat="v in colors" ng-click="currentlist.color=v" class="{{v}}">
+                             <span class="circle {{v}}"></span>
+                        </li>
+                    </ul>
+                    <span class="del" ng-click="del(currentlist.id)">删除</span>
+                    <span class="cancle"ng-click="showcard=false;cancel($event)">取消</span>
+                    <span class="finish"ng-click="showcard=false;cancel($event)">完成</span>
+                </div>
+            </div>
+            <div class="detail-content">
+                <div class="line"></div>
+                <div class="done"ng-click="toggleshowdone()">
+                    <span class="state" ng-class="{'active':isshowdone}"></span>
+                    已完成{{(currentlist.todos | filter:{isDone:true}).length}}项
+                </div>
+
+                <div class="item "ng-class="{'item-active':v==currenttodo}"ng-click="setcurrenttodo(v)"ng-repeat="v in currentlist.todos | filter:{isDone:true} track by v.ids" ng-show="isshowdone">
+                    <div class="control checked"  ng-click="v.isDone=!v.isDone"></div>
+                    <input type="text" ng-model="v.name" value="v.name"ng-change="saveData()">
+                    <div class="delete"ng-click="delete(v.ids)">删除</div>
+                    <div class="line"></div>
+                </div>
+                <div class="h"></div>
+                <div class="item" ng-class="{'item-active':v==currenttodo}"ng-click="setcurrenttodo(v)"ng-repeat="v in currentlist.todos | filter:{isDone:false} track by v.ids">
+                    <div class="control unchecked"  ng-click="v.isDone=!v.isDone;saveData()"></div>
+                    <div class="delete" ng-click="delete(v.ids)">删除</div>
+                    <input type="text" ng-model="v.name" value="v.name"ng-change="saveData()">
+                    <div class="line"></div>
+                </div>
+                <div class="item add"ng-click="add($event)">
+                    新条目
+                    <div class="line"></div>
+                    <div class="bottom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

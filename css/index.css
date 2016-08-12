@@ -1,0 +1,421 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: url(../images/packed-4.png); }
+
+.lists {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 500px;
+  background: #383838; }
+  .lists .list-title {
+    height: 44px;
+    border-bottom: 1px solid #1a1a1a;
+    position: relative; }
+    .lists .list-title .logo {
+      background: url(../images/packed-5.png) no-repeat 0px -588px;
+      position: absolute;
+      width: 56px;
+      height: 16px;
+      top: 14px;
+      left: 12px; }
+    .lists .list-title .title {
+      position: absolute;
+      top: 0;
+      line-height: 44px;
+      left: 74px;
+      color: #999;
+      font-size: 21px; }
+    .lists .list-title .add {
+      background: url(../images/packed-5.png) no-repeat -23px -526px;
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 23px;
+      height: 23px;
+      cursor: pointer; }
+  .lists .list-active {
+    background: #2d2d2b;
+    overflow: hidden; }
+    .lists .list-active .planed {
+      background: #2d2d2b; }
+  .lists .plan {
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 54px;
+    position: relative;
+    font-size: 16px; }
+    .lists .plan .plan-icon {
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 2px;
+      width: 40px;
+      height: 40px;
+      background: url(../images/packed-5.png) 0 -359px no-repeat; }
+    .lists .plan input {
+      display: inline;
+      border: none;
+      width: auto;
+      color: white;
+      outline: none;
+      font-size: 17px;
+      background: #383836; }
+    .lists .plan .green {
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -85px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px; }
+    .lists .plan .yellow {
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -34px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px; }
+    .lists .plan .blue {
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -68px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px; }
+    .lists .plan .orange {
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -51px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px; }
+    .lists .plan .purple {
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -17px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px; }
+    .lists .plan .brow {
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -133px -549px;
+      position: absolute;
+      top: 15px;
+      left: 22px; }
+    .lists .plan .pink {
+      width: 17px;
+      height: 17px;
+      background: url(../images/packed-5.png) -102px -571px;
+      position: absolute;
+      top: 15px;
+      left: 22px; }
+    .lists .plan .line {
+      position: absolute;
+      width: 90%;
+      height: 2px;
+      bottom: -2px;
+      right: 0;
+      background: url(../images/packed-1.png); }
+
+.detail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 500px; }
+  .detail .detail-list {
+    position: relative; }
+    .detail .detail-list .option-detail {
+      width: 355px;
+      height: 226px;
+      position: absolute;
+      right: 55px;
+      top: -45px;
+      z-index: 10;
+      background: white; }
+      .detail .detail-list .option-detail .container {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 20px 0 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px; }
+        .detail .detail-list .option-detail .container input {
+          width: 314px;
+          height: 42px;
+          font-size: 25px;
+          outline: none;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          padding-left: 13px; }
+        .detail .detail-list .option-detail .container .color-list {
+          color: black;
+          line-height: 55px;
+          padding-left: 3px; }
+        .detail .detail-list .option-detail .container ul {
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 14px; }
+          .detail .detail-list .option-detail .container ul .list-active.green {
+            background: url(../images/stylesheet-1.png) 0px -33px; }
+          .detail .detail-list .option-detail .container ul .list-active.yellow {
+            background: url(../images/stylesheet-1.png) 0px -99px; }
+          .detail .detail-list .option-detail .container ul .list-active.blue {
+            background: url(../images/stylesheet-1.png) 0px -66px; }
+          .detail .detail-list .option-detail .container ul .list-active.orange {
+            background: url(../images/stylesheet-1.png) 0px -198px; }
+          .detail .detail-list .option-detail .container ul .list-active.purple {
+            background: url(../images/stylesheet-1.png) 0px 0px; }
+          .detail .detail-list .option-detail .container ul .list-active.brow {
+            background: url(../images/stylesheet-1.png) 0px -132px; }
+          .detail .detail-list .option-detail .container ul .list-active.pink {
+            background: url(../images/stylesheet-1.png) 0px -165px; }
+          .detail .detail-list .option-detail .container ul li {
+            width: 33px;
+            height: 33px;
+            margin-left: 10px;
+            float: left;
+            cursor: pointer; }
+            .detail .detail-list .option-detail .container ul li span {
+              display: block;
+              width: 25px;
+              height: 25px;
+              margin: 4px 0px 0 4px; }
+            .detail .detail-list .option-detail .container ul li .green.circle {
+              background: url(../images/stylesheet-1.png) 0px -256px; }
+            .detail .detail-list .option-detail .container ul li .yellow.circle {
+              background: url(../images/stylesheet-1.png) 0px -306px; }
+            .detail .detail-list .option-detail .container ul li .blue.circle {
+              background: url(../images/stylesheet-1.png) 0px -281px; }
+            .detail .detail-list .option-detail .container ul li .orange.circle {
+              background: url(../images/stylesheet-1.png) 0px -381px; }
+            .detail .detail-list .option-detail .container ul li .purple.circle {
+              background: url(../images/stylesheet-1.png) 0px -231px; }
+            .detail .detail-list .option-detail .container ul li .brow.circle {
+              background: url(../images/stylesheet-1.png) 0px -331px; }
+            .detail .detail-list .option-detail .container ul li .pink.circle {
+              background: url(../images/stylesheet-1.png) 0px -356px; }
+          .detail .detail-list .option-detail .container ul::after {
+            content: '';
+            display: block;
+            clear: both; }
+        .detail .detail-list .option-detail .container .del {
+          position: absolute;
+          font-size: 18px;
+          color: red;
+          bottom: 20px;
+          left: 20px;
+          cursor: pointer; }
+        .detail .detail-list .option-detail .container .cancle {
+          position: absolute;
+          font-size: 18px;
+          bottom: 20px;
+          left: 65%;
+          padding-right: 20px;
+          border-right: 1px solid #ccc;
+          cursor: pointer; }
+        .detail .detail-list .option-detail .container .finish {
+          cursor: pointer;
+          position: absolute;
+          font-size: 18px;
+          font-weight: bold;
+          bottom: 20px;
+          right: 10px; }
+  .detail .detail-title {
+    font-size: 40px;
+    line-height: 1.2;
+    cursor: default;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    height: 48px;
+    padding-left: 28px; }
+    .detail .detail-title .option {
+      position: absolute;
+      right: 20px;
+      top: 19px;
+      font-size: 19px;
+      cursor: pointer; }
+  .detail .detail-content {
+    padding: 6px 0 0 0;
+    position: relative; }
+    .detail .detail-content .line {
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: 98%;
+      height: 2px;
+      background: url(../images/packed-3.png); }
+    .detail .detail-content .bottom {
+      position: absolute;
+      right: 0px;
+      bottom: -2px;
+      width: 98%;
+      height: 2px;
+      background: url(../images/packed-3.png); }
+    .detail .detail-content .h {
+      width: 100%;
+      height: 2px;
+      background: #000;
+      margin-top: 10px; }
+    .detail .detail-content .done {
+      padding-left: 50px;
+      height: 52px;
+      line-height: 52px;
+      color: #333;
+      font-size: 20px; }
+      .detail .detail-content .done .state {
+        display: block;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        background: url(../images/packed-5.png) -92px -526px;
+        cursor: pointer; }
+      .detail .detail-content .done .state.active {
+        background: url(../images/packed-5.png) -69px -526px; }
+    .detail .detail-content .add {
+      cursor: pointer; }
+    .detail .detail-content .item {
+      position: relative;
+      height: 52px;
+      line-height: 52px;
+      color: #333;
+      font-size: 19px;
+      padding-left: 58px;
+      box-sizing: border-box; }
+      .detail .detail-content .item .delete {
+        width: 40px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        line-height: 52px;
+        cursor: pointer; }
+      .detail .detail-content .item .control {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 10px;
+        left: 21px;
+        line-height: 52px; }
+      .detail .detail-content .item input {
+        margin-left: 23px;
+        height: 44px;
+        outline: none;
+        display: inline;
+        border: none;
+        background: none;
+        font-size: 18px; }
+
+.green {
+  color: #49bf1f; }
+  .green input {
+    color: #49bf1f; }
+  .green .unchecked {
+    background: url(../images/packed-5.png) no-repeat -42px -360px; }
+  .green .checked {
+    background: url(../images/packed-5.png) no-repeat -32px -402px; }
+  .green .item-active {
+    background: rgba(73, 191, 31, 0.1);
+    border: 1px solid #49bf1f;
+    border-left: none;
+    border-right: none; }
+
+.yellow {
+  color: #e0ac00; }
+  .yellow input {
+    color: #e0ac00; }
+  .yellow .unchecked {
+    background: url(../images/packed-5.png) no-repeat -136px -268px; }
+  .yellow .checked {
+    background: url(../images/packed-5.png) no-repeat -136px -200px; }
+  .yellow .item-active {
+    background: rgba(224, 172, 0, 0.1);
+    border: 1px solid #e0ac00;
+    border-left: none;
+    border-right: none; }
+
+.blue {
+  color: #1badf8; }
+  .blue input {
+    color: #1badf8; }
+  .blue .unchecked {
+    background: url(../images/packed-5.png) no-repeat -136px -168px; }
+  .blue .checked {
+    background: url(../images/packed-5.png) no-repeat -74px -360px; }
+  .blue .item-active {
+    background: rgba(27, 173, 248, 0.1);
+    border: 1px solid #1badf8;
+    border-left: none;
+    border-right: none; }
+
+.orange {
+  color: orange; }
+  .orange input {
+    color: orange; }
+  .orange .unchecked {
+    background: url(../images/packed-5.png) no-repeat 0px -434px; }
+  .orange .checked {
+    background: url(../images/packed-5.png) no-repeat -96px -466px; }
+  .orange .item-active {
+    background: rgba(255, 127, 0, 0.1);
+    border: 1px solid #ff7f00;
+    border-left: none;
+    border-right: none; }
+
+.purple {
+  color: #b14bc9; }
+  .purple input {
+    color: #b14bc9; }
+  .purple .unchecked {
+    background: url(../images/packed-5.png) no-repeat -64px -466px; }
+  .purple .checked {
+    background: url(../images/packed-5.png) no-repeat 0px -465px; }
+  .purple .item-active {
+    background: rgba(177, 75, 201, 0.1);
+    border: 1px solid #b14bc9;
+    border-left: none;
+    border-right: none; }
+
+.brow {
+  color: #a2845e; }
+  .brow input {
+    color: #a2845e; }
+  .brow .unchecked {
+    background: url(../images/packed-5.png) no-repeat -96px -434px; }
+  .brow .checked {
+    background: url(../images/packed-5.png) no-repeat -32px -434px; }
+  .brow .item-active {
+    background: rgba(162, 132, 94, 0.1);
+    border: 1px solid #a2845e;
+    border-left: none;
+    border-right: none; }
+
+.pink {
+  color: #ff2968; }
+  .pink input {
+    color: #ff2968; }
+  .pink .unchecked {
+    background: url(../images/packed-5.png) no-repeat -128px -402px; }
+  .pink .checked {
+    background: url(../images/packed-5.png) no-repeat -64px -402px; }
+  .pink .item-active {
+    background: rgba(255, 41, 104, 0.1);
+    border: 1px solid #ff2968;
+    border-left: none;
+    border-right: none; }
